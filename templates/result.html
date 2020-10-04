@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+{% block title %}Result{% endblock title %}
+
+{% block body%} 
+<ul>
+<li>
+<h4 style="color:Yellow">Players: <h4 style = "color:White"> {{ Final_prediction }}</h4>
+</li>
+<br>
+<br>    
+<li>
+<h4 style="color:Yellow"> Playing Role: <h4 style = "color:White"> {{Roles}}</h4>
+</li>
+</ul>
+
+<style>
+body  {
+  background-image: url("/static/Main3.jpg");
+}
+</style>
+
+{% endblock body%}

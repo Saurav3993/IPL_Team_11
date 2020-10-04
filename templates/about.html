@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% block title %}About{% endblock title %}
+
+{% block body%} 
+<style>
+body  {
+  background-image: url("/static/Main4.jpg");
+}
+</style>
+<h4 style="color:White">This page depicts the playing 11 for the selected team considering the following constraints:<h4>
+<ul>
+<li>
+<h6 style="color:Cornsilk">Each teams have 4 batsmen, 2 allrounders, 1 wicketkeeper and 4 bowlers</h6>
+</li>   
+<li>
+<h6 style="color:Cornsilk">Teams have 4 overseas players and atleast 1 uncapped player (player of Indian origin who hasn’t played for the national team yet)</h6>
+</li>
+</ul>
+{% endblock body%}
