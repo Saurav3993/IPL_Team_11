@@ -13,4 +13,4 @@
 
 "Home" directory is App directory
 
-App can be started using "manage.py" file
+App can be started using "python manage.py runserver" in command prompt
