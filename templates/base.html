@@ -12,7 +12,8 @@
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">Select your IPL Team Playing 11
+  <a class="navbar-brand" href="/">Select your IPL Team Playing 11 <br> Home
+  <br>
    <img src="/static/Cup.JPG" width="80" height="60" class="d-inline-block align-top" alt="" loading="lazy">
    </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,31 +23,37 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/result" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Select Team
-        </a>
-
+      <div>
         <div class="btn-toolbar">
-            <div class="btn-group" role="group"></div>
-        </div>
-        <form action="/result" method="POST">
-        	{% csrf_token %} 
-            	<input type="submit" name="Chennai Super Kings" value="Chennai Super Kings" class="Chennai Super Kings-success">
-              <input type="submit" name="Delhi Capitals" value="Delhi Capitals" class="Delhi Capitals-success">
-              <input type="submit" name="Kings XI Punjab" value="Kings XI Punjab" class="Kings XI Punjab-success">
-            	<input type="submit" name="Kolkata Knight Riders" value="Kolkata Knight Riders" class="Kolkata Knight Riders-success">
-              <input type="submit" name="Mumbai Indians" value="Mumbai Indians" class="Mumbai Indians-sucess">
-              <input type="submit" name="Rajasthan Royals" value="Rajasthan Royals" class="Rajasthan Royals-success">
-              <input type="submit" name="Royal Challengers Bangalore" value="Royal Challengers Bangalore" class="Royal Challengers Bangalore-success">
-            	<input type="submit" name="Sunrisers Hyderabad" value="Sunrisers Hyderabad" class="Sunrisers Hyderabad"> 
-      
-        </form>
 
+        <body>
+        <li>
+        
+        <h4 style="color:Yellow">Select Teams </h4>
+        </li>
+        
+        <body>
+       </div>
+          <form action = "/result">
+          <select name="Teams">
+            <option disabled = "True" selected>----------select team----------</option>
+            <option>Chennai Super Kings</option>
+            <option>Delhi Capitals</option>
+            <option>Kings XI Punjab</option>
+            <option>Kolkata Knight Riders</option>
+            <option>Mumbai Indians</option>
+            <option>Rajasthan Royals</option>
+            <option>Royal Challengers Bangalore</option>
+            <option>Sunrisers Hyderabad</option>
+          </select>
+            <input type= "submit" value="click">
         </div>
+        </div>
+        </div>
+        
+        
+
       </li>
         <class="nav-item">
         <a class="nav-link" href="/about">About This Page</a>
