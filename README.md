@@ -1,6 +1,4 @@
 # IPL_Team_11
-"My Approach.docx" cotains my approach towards the problem
-
 "Final_excel.xlsx" contains the final cleaned file.
 
 "Preprocessing.ipynb" is for preprocessing of "Raw_Data.xlsx".
